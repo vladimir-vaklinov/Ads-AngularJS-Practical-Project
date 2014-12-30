@@ -11,23 +11,57 @@ body {
 	margin-left: auto;
     margin-right: auto;
 	width: 34%;
-	background-color: lightgreen;
+	background-color: #a9d18e;
 	border-radius: 20px;
 	border: 1px solid green;
 }
 
-h2 {
+#loginForm {
+	margin-left: auto;
+    margin-right: auto;
+	width: 20%;
+	background-color: #a9d18e;
+	border-radius: 20px;
+	border: 1px solid green;
+}
+
+h2, h3 {
 	color: black;
 	text-align: center;
+	font-weight: bold;
 }
 
 #registerBtn {
-
-	margin: 20px 0 20px 80px;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid green;
+	background-color: #70ad47;
+	color: #fff;
+	margin: 20px 160px 20px 80px;
 }
 
-label {
+#registrationForm label {
 	margin-left: 25px;
 	margin-right: 5px;
+}
+
+#loginForm label {
+	margin-left: 45px;
+    margin-right: 45px;
+}
+
+#loginBtn {
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid green;
+	margin: 15px 20px 20px 45px;
+	background-color: #70ad47;
+	color: #fff;  
+}
+
+a {
+	color: #2e78aa;
 }
 
