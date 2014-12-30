@@ -3,5 +3,8 @@ var app = angular.module('adsApp', ['ngRoute'])
 	$routeProvider.when('/register', {
 		templateUrl: 'templates/register.html'
 	})
+	$routeProvider.when('/ads', {
+		templateUrl: 'templates/all-ads.html'
+	})
 });
 
