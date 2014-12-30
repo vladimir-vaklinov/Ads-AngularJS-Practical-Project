@@ -8,6 +8,7 @@ var app = angular.module('adsApp', ['ngRoute'])
 	});
 	$routeProvider.when('/ads', {
 		templateUrl: 'templates/all-ads.html'
-	})
+	});
+	$routeProvider.otherwise({redirectTo: '/ads'});
 });
 

@@ -1,7 +1,36 @@
+<link rel="stylesheet" href="css/app.css">
 <div class="jumbotron">
 	<div class="row">
 		<div class="col-md-8">
-			ads
+			<ul>
+				<li ng-repeat="ad in data.ads">
+					<div class="container well">
+						<div class="row">
+							<div class="col-md-7">
+								<h4 class="pull-left">
+									{{ad.title}}
+								</h4>
+							</div>
+							<div class=col0md-5>
+								<span class=pull-right>
+									{{ad.date | date: 'dd-MMM-yyyy'}}
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="image-container">
+									<img src="" ng-src="{{ad.imageDataUrl}}" alt="No image available" 
+										class="images">
+								</div>	
+							</div>
+							<div class="col-md-8">
+								
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div class="col-md-4">
 			filters
