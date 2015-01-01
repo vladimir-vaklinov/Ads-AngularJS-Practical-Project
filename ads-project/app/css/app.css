@@ -70,3 +70,11 @@ a {
 	height: 150px;
 }
 
+footer {
+	background-color: #a9d18e;
+	height: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px; 
+}
+
