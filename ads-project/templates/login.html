@@ -1,69 +1,32 @@
-<!--<div id="loginForm">
-	<link rel="stylesheet" href="css/app.css">
-		<h3>Login</h3>
-		<hr>
-		<form>
-			<label>Username:<br>
-				<input type="text" name="loginUsername" required />
-			</label><br>
-			<label>Password:<br>
-				<input type="password" name="loginPassword" required />
-			</label>
-			
-		</form>
-		<button type="submit" id="loginBtn">Login</button>
-		<a href="#/register">Register here</a>
-</div>-->
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>How To Keep Your Footer At The Bottom of The Page - CSSReset.com</title>
-	
-	<link rel="stylesheet" type="text/css" href="style.css" />	
-
-	<!--[if lt IE 7]>
-		<style type="text/css">
-			#wrapper { height:100%; }
-		</style>
-	<![endif]-->
-	
-</head>
-
-<body>
-
-	<div id="wrapper">
-		
-		<div id="header">
-		</div><!-- #header -->
-		
-		<div id="content">
-			<div id="loginForm">
-	<link rel="stylesheet" href="css/app.css">
-		<h3>Login</h3>
-		<hr>
-		<form>
-			<label>Username:<br>
-				<input type="text" name="loginUsername" required />
-			</label><br>
-			<label>Password:<br>
-				<input type="password" name="loginPassword" required />
-			</label>
-			
-		</form>
-		<button type="submit" id="loginBtn">Login</button>
-		<a href="#/register">Register here</a>
-</div>
-		</div><!-- #content -->
-		
-		<div id="footer" ng-include="'templates/footer.html'">
-		</div><!-- #footer -->
-		
-	</div><!-- #wrapper -->
-	
-</body>
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Login Page</title>	
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<div id="content">
+				<div id="loginForm">
+					<h3>Login</h3>
+					<hr>
+					<form>
+						<label>Username:<br>
+							<input type="text" name="loginUsername" required />
+						</label><br>
+						<label>Password:<br>
+							<input type="password" name="loginPassword" required />
+						</label>
+					</form>
+					<button type="submit" id="loginBtn">Login</button>
+					<a href="#/register">Register here</a>
+				</div>
+			</div>
+			<div id="footer" ng-include="'templates/footer.html'">
+			</div>
+		</div>
+	</body>
 </html>
 

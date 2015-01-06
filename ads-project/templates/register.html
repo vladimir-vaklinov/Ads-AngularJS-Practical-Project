@@ -23,7 +23,10 @@
 				<input type="text" name="registerPhone" required>
 			</label>
 			<label>Town:<br>
-				<input type="text" name="registerTown">
+				<select id="inputTown" ng-options="town.id as town.name for town in towns" 
+					ng-model="selected.town.id">
+					<option value="">Sofia</option>
+				</select>
 			</label><br>
 			<button type="submit" id="registerBtn">Register</button>
 			<a href="#/login">Login here</a>
