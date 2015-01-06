@@ -5,30 +5,31 @@
 		<hr>
 		<form>
 			<label>Username:<br>
-				<input type="text" name="registerUsername" required>
+				<input type="text" name="registerUsername" required ng-model="user.username" />
 			</label><br>
 			<label>Password:<br>
-				<input type="password" name="registerPassword" required>
+				<input type="password" name="registerPassword" required ng-model="user.password" />
 			</label>
 			<label>Confirm password:<br>
-				<input type="password" name="registerConfirmPassword" required>
+				<input type="password" name="registerConfirmPassword" required 
+					ng-model="user.confirmPassword" />
 			</label><br>
 			<label>Name:<br>
-				<input type="text" name="registerName" required>
+				<input type="text" name="registerName" required ng-model="user.name" />
 			</label>
 			<label>Email:<br>
-				<input type="email" name="registerEmail" required>
+				<input type="email" name="registerEmail" required ng-model="user.email" />
 			</label><br>
 			<label>Phone:<br>
-				<input type="text" name="registerPhone" required>
+				<input type="text" name="registerPhone" required ng-model="user.phone" />
 			</label>
 			<label>Town:<br>
 				<select id="inputTown" ng-options="town.id as town.name for town in towns" 
-					ng-model="selected.town.id">
+					ng-model="user.townId">
 					<option value="">Sofia</option>
 				</select>
 			</label><br>
-			<button type="submit" id="registerBtn">Register</button>
+			<button type="submit" id="registerBtn" ng-click="register(user)">Register</button>
 			<a href="#/login">Login here</a>
 		</form>
 	</div>
