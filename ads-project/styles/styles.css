@@ -32,7 +32,7 @@ h2, h3 {
 	font-weight: bold;
 }
 
-#registerBtn {
+.registerBtn {
 	width: 80px;
 	height: 30px;
 	border-radius: 5px;
@@ -45,6 +45,10 @@ h2, h3 {
 #registrationForm label {
 	margin-left: 25px;
 	margin-right: 5px;
+}
+
+#centerRegisterForm, #wrapper {
+	margin-top: 20px;
 }
 
 #loginForm label {
@@ -64,6 +68,7 @@ h2, h3 {
 
 a {
 	color: #2e78aa;
+	text-decoration: none;
 }
 
 .images {
@@ -79,7 +84,7 @@ a {
 	padding-bottom:100px; /* Height of the footer element */
 }
 
-#footer, footer {
+footer {
 	background: #a9d18e;
 	width: 100%;
 	height: 30px;
@@ -95,4 +100,47 @@ select {
 	width: 191px;
 	height: 22px;
 }
+
+header {
+	background-color: #a9d18e;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.navigationPanel {
+	margin: 20px;
+	border: 1px solid black;
+	text-align: center;
+	background: #a9d18e;
+}
+
+.navigationPanel ul li {
+	list-style: none;
+}
+
+.navigationPanel h3 {
+	font-weight: bold;
+}
+
+.buttonNavigation {
+	width: 100px;
+	height: 30px;
+	background-color: #70ad47;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	font-family: Georgia;
+	font-weight: bold;
+}
+
+button:hover { 
+    background: #daa600;
+    color: black;
+}
+
+
 
