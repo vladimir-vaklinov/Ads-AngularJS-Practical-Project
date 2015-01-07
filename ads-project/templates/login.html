@@ -1,4 +1,4 @@
-<div ng-include="'templates/header.html'"></div>
+ <div ng-include="'templates/header.html'"></div>
 <div class="col-md-2" id="navigationPanel">
 	<left-public-sidebar></left-public-sidebar>	
 </div>
@@ -11,14 +11,15 @@
 					<hr>
 					<form>
 						<label>Username:<br>
-							<input type="text" name="loginUsername" required />
+							<input type="text" name="loginUsername" ng-model="user.username" required />
 						</label><br>
 						<label>Password:<br>
-							<input type="password" name="loginPassword" required />
+							<input type="password" name="loginPassword" ng-model="user.password" required />
 						</label>
-					</form>
-					<button type="submit" id="loginBtn">Login</button>
+					
+					<button type="submit" id="loginBtn" ng-click="login(user)">Login</button>
 					<a href="#/register">Register here</a>
+					</form>
 				</div>
 			</div>
 			<div id="footer" ng-include="'templates/footer.html'">
