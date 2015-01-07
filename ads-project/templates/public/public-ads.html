@@ -1,7 +1,43 @@
-<div id="public-ads">
+<div class="public-ads">
 	<ul>
 		<li ng-repeat="ad in adsData.ads">
-			{{ad.title}}
+			<div class="row">
+
+				<div class="col-md-7">
+					<h4 class="pull-left" id="adTitle">
+						{{ad.title}}
+					</h4>
+				</div>	
+
+				<div class="col-md-5">
+					<span class="pull-right" id="adDate">
+						{{ad.date | date: 'dd-MMM-yyyy'}}
+					</span>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="adImage">
+						<img src="" ng-src="{{ad.imageDataUrl}}" alt="No image available" width="137px" height="150px" />
+					</div>
+				</div>
+
+				<div class="col-md-9">
+					<div id="adText">
+						{{ad.text}}
+					</div>
+					<strong class="publisherDetails">
+						Name:{{ad.ownerName}}<br>
+						Email:{{ad.ownerEmail}}<br>
+						Phone:{{ad.ownerPhone}}<br>
+					</strong>
+				</div>
+			</div>			
 		</li>
-	</ul>
+	</ul>			
 </div>
+
+	
+			

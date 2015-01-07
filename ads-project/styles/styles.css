@@ -146,5 +146,39 @@ button:hover {
     color: black;
 }
 
+.public-ads ul li {
+	list-style: none;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+.adImage {
+	margin: 0 0 20px 20px;
+	border: 1px solid black;
+}
+
+#adTitle {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+#adDate {
+	margin: 20px 20px 0 0;
+}
+
+#adText {
+	padding-right: 20px;
+	margin-right: 0; 
+}
+
+.publisherDetails {
+	margin-top: 20px;
+}
+
+
+
+
+
+
 
 
