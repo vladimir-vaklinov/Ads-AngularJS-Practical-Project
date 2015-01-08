@@ -2,7 +2,8 @@
 <div id="wrapper2">
 	<div class="row">
 		<div class="col-md-2" id="navigationPanel">
-			<left-public-sidebar></left-public-sidebar>	
+			<div ng-include="'templates/public/left-sidebar.html'" ng-if="!isLoggedIn"></div>
+			<div ng-include="'templates/public/logged-in-sidebar.html'" ng-if="isLoggedIn"></div>	
 		</div>
 		<div class="col-md-7">
 			<public-ads></public-ads>
