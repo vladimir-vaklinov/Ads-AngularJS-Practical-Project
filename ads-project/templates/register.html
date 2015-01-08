@@ -1,6 +1,7 @@
 <div ng-include="'templates/header.html'"></div>
 <div class="col-md-2" id="navigationPanel">
-	<left-public-sidebar></left-public-sidebar>	
+	<div ng-include="'templates/public/left-sidebar.html'" ng-if="!isLoggedIn"></div>
+	<div ng-include="'templates/public/logged-in-sidebar.html'" ng-if="isLoggedIn"></div>		
 </div>
 <div id="centerRegisterForm">
 	<div id="registrationForm">
