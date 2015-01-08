@@ -188,18 +188,29 @@ button:hover {
 
 ul li {
 	list-style: none;
-	margin-left: 20px;
+	padding-left: 20px;
 }
 
 #categories ul li:hover, #towns ul li:hover, #loggedInSidebar ul li:hover {
 	color: black;
 	background: #daa600;
+	cursor: pointer;
 }
 
 #loggedInSidebar {
 	border: 1px solid black;
 	background: #a9d18e;
-	margin: 20px 0 0 20px; 
+	margin: 20px 0 0 20px;
+	color: black; 
+}
+
+#loggedInSidebar ul li {
+	margin-bottom: 10px;
+}
+
+#loggedInSidebar ul li a {
+	color: black;
+	text-decoration: none;
 }
 
 
