@@ -150,6 +150,7 @@ button:hover {
 	list-style: none;
 	border: 1px solid black;
 	margin: 20px;
+	background: #a9d18e;
 }
 
 .adImage {
@@ -178,6 +179,30 @@ button:hover {
 #loadingImage {
 	text-align: center;
 }
+
+#categories, #towns {
+	border: 1px solid black;
+	margin: 20px 20px 0 0;
+	background: #a9d18e;
+}
+
+ul li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+#categories ul li:hover, #towns ul li:hover, #loggedInSidebar ul li:hover {
+	color: black;
+	background: #daa600;
+}
+
+#loggedInSidebar {
+	border: 1px solid black;
+	background: #a9d18e;
+	margin: 20px 0 0 20px; 
+}
+
+
 
 
 
