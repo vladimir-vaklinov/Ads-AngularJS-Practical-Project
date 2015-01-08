@@ -1,5 +1,6 @@
 <div id="categories">
 	<h3>Categories</h3>
+	<a ng-click="logout()">Logout</a>
 	<ul>
 		<li ng-repeat="category in categories" ng-click="categoryClicked(category)">
 			{{category.name}}
