@@ -1,20 +1,20 @@
 <div class="public-ads">
+	<div id="loadingImage">
+		<img src="images/loading.gif" ng-hide="ready" alt="Loading... Please wait." />
+	</div>
 	<ul>
 		<li ng-repeat="ad in adsData.ads">
 			<div class="row">
-
 				<div class="col-md-7">
 					<h4 class="pull-left" id="adTitle">
 						{{ad.title}}
 					</h4>
 				</div>	
-
 				<div class="col-md-5">
 					<span class="pull-right" id="adDate">
 						{{ad.date | date: 'dd-MMM-yyyy'}}
 					</span>
 				</div>
-
 			</div>
 
 			<div class="row">
@@ -34,7 +34,8 @@
 						Phone:{{ad.ownerPhone}}<br>
 					</strong>
 				</div>
-			</div>			
+			</div>
+
 		</li>
 	</ul>			
 </div>
