@@ -1,6 +1,9 @@
 <div id="towns">
 	<h3>Towns</h3>
 	<ul>
+		<li ng-click="townClicked(towns)">
+			All
+      	</li>
 		<li ng-repeat="town in towns" ng-click="townClicked(town)">
 			{{town.name}}
 		</li>
