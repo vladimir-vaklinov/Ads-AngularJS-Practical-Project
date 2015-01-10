@@ -214,6 +214,16 @@ ul li {
 	text-decoration: none;
 }
 
+.logoutBtn {
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#homeBtn {
+	margin-left: 20px; 
+}
+
 
 
 

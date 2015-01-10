@@ -1,3 +1,5 @@
 <header>
-	<p>Ads - {{pageTitle}}</p>
+	<span>Ads - {{pageTitle}}</span>
+	<span>{{userData.getUser().username}}</span>
+    <a ng-click="logout()" ng-if="isLoggedIn" class="logoutBtn">Logout</div>
 </header>
